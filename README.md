@@ -2,7 +2,7 @@
 ![Capture](https://user-images.githubusercontent.com/79428102/116730479-65ee2e80-a99d-11eb-93e8-ab935e3befc6.JPG)
 
 
-The food and nutrition project helps our project client Jim (anon-ymous) learn to make healthy food choices, improve energy and alertness, reduce disease and illness risks, and gain knowledge of nutrients through the data-driven analysis.
+The food and nutrition project helps our project client Jim (anonymous) learn to make healthy food choices, improve energy and alertness, reduce disease and illness risks, and gain knowledge of nutrients through the data-driven analysis.
 
 ## Motivation
 The food and nutrition project helps our project client Jim (alias) learn to make healthy food choices, improve energy and alertness, reduce disease and illness risks, and gain knowledge of nutrients through the data-driven analysis. 
