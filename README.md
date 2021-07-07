@@ -1,6 +1,5 @@
 # Nutrition-Project
-![Capture](https://user-images.githubusercontent.com/79428102/116730479-65ee2e80-a99d-11eb-93e8-ab935e3befc6.JPG)
-
+![image](https://user-images.githubusercontent.com/79428102/124829551-9f0ec600-df2d-11eb-804a-94e0d3abbfe3.png)
 
 The food and nutrition project helps our project client Jim (anonymous) learn to make healthy food choices, improve energy and alertness, reduce disease and illness risks, and gain knowledge of nutrients through the data-driven analysis.
 
@@ -19,8 +18,14 @@ We received 6,400 hundred rows of nutritional data going back to 2014 that told 
 ## Key Skills Learned
 - ARIMA, Auto regression
 - Advanced statistic (time-series data forcasting)
+- Correlation matrix 
 - ETL (Dataframe Transform
 - Python regression analysis 
+
+#Conclusion
+![image](https://user-images.githubusercontent.com/79428102/124829657-b8b00d80-df2d-11eb-88ed-a741225d6e56.png)
+
+Our models indicate that trans fat and saturated fat have a positive relationship with LDL, meaning that decreasing trans and saturated fat intake may decrease LDL levels. With LDL levels indicating borderline high on the client’s recent bloodwork, our client may want to keep monitoring their change. In addition,  our client can investigate the proposed correlation matrix to see what ingredients have negative and positive relationships one another affiliated with his diet habit. Finally, we recommend that our client continue to monitor cholesterol levels to make sure they stay in the healthy range.
 
 ## License
 © hej6853
