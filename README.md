@@ -17,7 +17,10 @@ We received 6,400 hundred rows of nutritional data going back to 2014 that told 
 - Tableau
 
 ## Key Skills Learned
-
+- ARIMA, Auto regression
+- Advanced statistic (time-series data forcasting)
+- ETL (Dataframe Transform
+- Python regression analysis 
 
 ## License
 © hej6853
