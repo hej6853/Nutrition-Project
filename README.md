@@ -9,6 +9,20 @@ The food and nutrition project helps our project client Jim (alias) learn to mak
 ## Dataset
 We received 6,400 hundred rows of nutritional data going back to 2014 that told us how many meals he ate in a day plus the nutritional content for each meal, including calories, fat content, carbohydrates, protein, cholesterol, sodium, potassium, Vitamins A and C, Calcium, and Iron. We also received some weight data. Jim also provided us with the results of eight blood tests done between 2009 and 2019, though we only used the five tests from 2014 to 2019 in order to compare bloodwork with the other variables gathered like the nutritional data. Jim also has a very active lifestyle and has tracked the type and length of exercise he has done since 2014. He primarily does High intensity interval training, Brazilian Jiu Jitsu, and weight training combined with cardio. Finally, we also have about a years worth of sleep data going back to early 2020. There are periods of time that we don’t have data for which we had to keep in mind when doing our analysis. For most of 2016, Jim did not track his meals. It can be challenge when analyzing this data and not knowing whether, for example, Jim didn’t exercise for several months or if he simply wasn’t recording exercise for that period of time. As we continue to undergo this analysis, communication with Jim will be important to make sure we have the information that we need. 
 
+## Data Preprocessing
+![image](https://user-images.githubusercontent.com/79428102/128901036-5cb95742-7aa1-4068-ad8e-09895b2dc52b.png)
+First step in going about this project was to get the data and examine what we needed to do in moving forward. For example, there were time periods where we were missing data or had minimal food entries so we had to come with a plan on how we were going to clean the data. Data cleaning was an important step that we worked on before going into exploratory analysis to see what kind of insights we may be able to pull from our data. The primary datasets that we worked with revolved around exercise, bloodwork, and nutrition. Since we knew that our client had played around with going on different diets, we wanted to figure out when these changes were so that we could compare these time periods and the health outcomes. From our exploratory analysis, we found that our client was on the Paleo diet in 2014, starting on Keto later in 2017. Now, Chesta is going to talk about these two different diets. 
+
+![image](https://user-images.githubusercontent.com/79428102/128901183-5fbabe24-d004-4d8d-b713-77c2929995f5.png)
+During the data pre-processing, we felt the necessity of having a relative value for each category, that is, a fat, carbohydrates, and protein percentage compared to the total amount of calories. Because it wouldn’t make sense to compare 100 grams of protein against 3000 calories versus 200 grams of protein against  2000 calories. In this case, we used fat in grams times 9 divided by total calories, carbs and protein in grams times 4 divided by total calories!
+
+# Data Exploration
+![image](https://user-images.githubusercontent.com/79428102/128901596-632f53bc-685a-40f5-bdc4-f253563c5872.png)
+
+# Analysis
+![image](https://user-images.githubusercontent.com/79428102/128901952-12e39368-2eb2-4b86-a1be-493c76982ea9.png)
+The LDL level as known as a bad cholesterol, it reached border high levels after the Keto Diet. The fats linked to LDL cholesterol levels are related to certain type of fat called saturated fats and trans fats. Saturated fats in products that usually come from animals, such as meat, milk, cheese, and butter. Also, when trans-fat enters the body, it pushes unsaturated fat and takes its place, causing abdominal problems, lowering HDL and raising LDL, causing various vascular diseases.
+
 ## Built With
 ● Python
 ● VBA
