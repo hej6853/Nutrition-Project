@@ -22,7 +22,7 @@ We received 6,400 hundred rows of nutritional data going back to 2014 that told 
 ● ETL (Dataframe Transform)
 ● Python regression analysis 
 
-## ARIMA CODE
+### ARIMA CODE
 ```
 import pandas as pd
 import pmdarima as pmd
@@ -47,7 +47,42 @@ def arimamodel(series):
         print(autoarima_model.summary())
 
 arimamodel(series)
-© 2021 GitHub, Inc.
+```
+### Regression Analysis
+```
+import pandas as pd
+import statsmodels.api as sm
+import warnings
+
+warnings.simplefilter('ignore', category=UserWarning)
+
+df = pd.read_excel("RegressionData.xlsx")
+
+def CHECKALL(df):
+    for ys in df.iloc[:,23:41]:
+        y = df[f'{ys}']
+        for header in df.iloc[:,1:22]:
+            x = sm.add_constant(df[f'{header}'])
+            mod = sm.OLS(y, x).fit()
+            LRresult = (mod.summary2().tables[1])
+            pvalue = list(LRresult['P>|t|'])
+
+            if pvalue[1] <= 0.05:
+                print(mod.summary())
+CHECKALL(df)
+
+def AST(df):
+    y = df['SGOT (AST) (U/L)']
+
+    for header in df.iloc[:,1:22]:
+        x = sm.add_constant(df[f'{header}'])
+        mod = sm.OLS(y, x).fit()
+        LRresult = (mod.summary2().tables[1])
+        pvalue = list(LRresult['P>|t|'])
+
+        if pvalue[1] <= 0.3:
+            print(mod.summary())
+#AST(df)
 ```
 
 #Conclusion
